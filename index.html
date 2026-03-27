@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DUB to MLA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <div class="background" aria-hidden="true">
+      <div class="halo halo-one"></div>
+      <div class="halo halo-two"></div>
+      <div class="stars" id="stars"></div>
+    </div>
+
+    <div class="shell">
+      <header class="flight-strip reveal" style="--delay: 0;">
+        <p class="flight-meta">
+          <span>Ryanair</span>
+          <span id="flight-date">15 June</span>
+          <span>Medianoche Europa/Dublin</span>
+        </p>
+
+        <div class="route" aria-label="Vuelo de Dublin a Malta">
+          <div class="airport"><strong>DUB</strong> <span aria-hidden="true">🇮🇪</span></div>
+          <div class="runway" aria-hidden="true">
+            <svg class="route-arc" viewBox="0 0 520 180" preserveAspectRatio="none">
+              <path d="M24 138 Q260 18 496 138"></path>
+            </svg>
+            <div class="plane">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                <path d="M21.8 10.8 14 9.4 9.9 2.1c-.2-.4-.6-.6-1.1-.5-.5.1-.8.5-.8 1l.7 6.2-5.2-1.2-2.1-2c-.3-.3-.8-.4-1.2-.2-.5.2-.7.7-.6 1.2l.9 3.1-.9 3.1c-.1.5.1 1 .6 1.2.4.2.9.1 1.2-.2l2.1-2 5.2-1.2-.7 6.2c0 .5.3.9.8 1 .5.1.9-.1 1.1-.5l4.1-7.3 7.8-1.4c.5-.1.8-.5.8-1s-.3-.9-.8-1Z"></path>
+              </svg>
+            </div>
+            <svg class="globe" viewBox="0 0 220 84" role="img" aria-hidden="true">
+              <path d="M20 56c18-22 43-33 74-33s56 11 74 33"></path>
+              <path d="M54 56c12-13 31-20 56-20s44 7 56 20"></path>
+              <path d="M89 56c6-9 13-13 21-13 8 0 15 4 21 13"></path>
+              <path d="M109 24v32"></path>
+              <path d="M74 29c8 8 12 17 12 27"></path>
+              <path d="M144 29c-8 8-12 17-12 27"></path>
+            </svg>
+          </div>
+          <div class="airport"><strong>MLA</strong> <span aria-hidden="true">🇲🇹</span></div>
+        </div>
+      </header>
+
+      <section class="hero">
+        <main class="countdown-stage reveal" style="--delay: 1;">
+          <p class="eyebrow">hasta que la medianoche de Dublin se convierta en hora de Malta</p>
+
+          <div class="days-wrap" aria-live="polite">
+            <span class="days" id="days">0</span>
+            <span class="days-label" id="days-label">dias</span>
+          </div>
+
+          <div class="clock" role="timer" aria-label="Cuenta regresiva">
+            <div class="clock-unit">
+              <span class="clock-value" id="hours">00</span>
+              <span class="clock-label">Horas</span>
+            </div>
+            <span class="clock-divider" aria-hidden="true"></span>
+            <div class="clock-unit">
+              <span class="clock-value" id="minutes">00</span>
+              <span class="clock-label">Minutos</span>
+            </div>
+            <span class="clock-divider" aria-hidden="true"></span>
+            <div class="clock-unit">
+              <span class="clock-value" id="seconds">00</span>
+              <span class="clock-label">Segundos</span>
+            </div>
+          </div>
+
+          <p class="note" id="countdown-note">Contando hasta las 00:00 en Irlanda del 15 de junio.</p>
+        </main>
+      </section>
+
+      <footer class="footer reveal" style="--delay: 4;">
+        <p class="footer-copy">De Dublin a Malta, un segundo mas cerca cada dia</p>
+      </footer>
+
+      <section class="heart-row reveal" style="--delay: 5;">
+        <aside class="heart-side left">
+          <button class="heart-button" type="button" data-heart-key="kuxurrufleta">
+            <span class="heart-glyph" aria-hidden="true">♥</span>
+            <span class="heart-copy">
+              <span class="heart-label">Kuxurrufleta</span>
+              <span class="heart-count"><strong data-heart-count>0</strong> toques</span>
+            </span>
+          </button>
+        </aside>
+
+        <aside class="heart-side right">
+          <button class="heart-button" type="button" data-heart-key="kuxurrufleto">
+            <span class="heart-glyph" aria-hidden="true">♥</span>
+            <span class="heart-copy">
+              <span class="heart-label">Kuxurrufleto</span>
+              <span class="heart-count"><strong data-heart-count>0</strong> toques</span>
+            </span>
+          </button>
+        </aside>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
